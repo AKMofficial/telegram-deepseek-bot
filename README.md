@@ -19,7 +19,6 @@ This project implements a Telegram bot for DeepSeek API using the OpenAI client 
 * **Environment Variable Configuration:** Uses a `.env` file to easily manage API keys and settings.
 * **Basic Logging:** Logs key events like bot startup, user interactions, and errors.
 
-
 ## Need & Purpose
 
 This bot is programmed to interact with DeepSeek's API by a single system prompt loaded from a file (`prompt.txt`). Instead of sending the same prompt with every request, the system prompt is included only once at the beginning of each conversation. Also, interacting via the API may offer a more consistent experience compared to potential high-traffic periods on web interfaces.
@@ -45,7 +44,7 @@ This bot is programmed to interact with DeepSeek's API by a single system prompt
     ```
 
 3.  **Create Configuration File:**
-    Create a file named `.env` in the same directory as the Python script. Add the following lines and replace the placeholders with your credentials:
+    Create a file named `.env` in the same folder as the Python script. Add the following lines and replace the placeholders with your credentials:
     ```dotenv
     # .env file
     BOT_TOKEN= <Your Telegram Bot Token>
@@ -76,3 +75,7 @@ The bot is ready! You should see logging output in your terminal.
 2.  Send `/start`. 
 3.  Send text messages.
 4.  Use the commands `/help`, `/model`, and `/clear` as needed.
+
+## Development Note
+
+This project was developed with assistance from AI models.
