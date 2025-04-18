@@ -51,9 +51,9 @@ This bot is programmed to interact with DeepSeek's API by a single system prompt
 
     AUTHORIZED_ACCOUNTS= <UserID1>
     ```
-    You can get the user ID from Telegram bots like @userinfobot.
-    Optional: Comma-separated (,) list of Telegram User IDs allowed to use the bot.
-   (Remember to remove the < and > brackets when adding your actual token and ID).
+* You can get the user ID from Telegram bots like @userinfobot.
+* Optional: Comma-separated (,) list of Telegram User IDs allowed to use the bot.
+* (Remember to remove the < and > brackets when adding your actual token and ID).
 
 4.  **Create Custom System Prompt (Optional):**
     Create a file named `prompt.txt` in the same folder. Write the text you want to use as the system prompt (e.g., "You are a programming instructor, provide your answers with explanation and examples."). If this file is not present, the default prompt "You are a helpful assistant." will be used.
