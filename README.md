@@ -27,7 +27,7 @@ This bot is programmed to interact with DeepSeek's API by a single system prompt
 
 * Python 3.7 or higher
 * A Telegram Bot Token. Create a new bot using [BotFather](https://t.me/BotFather).
-* A DeepSeek API. Obtained from the [DeepSeek platform](https://platform.deepseek.com/)
+* A DeepSeek API. Obtain it from the [DeepSeek platform](https://platform.deepseek.com/)
 
 ## Setup & Installation
 
@@ -35,7 +35,6 @@ This bot is programmed to interact with DeepSeek's API by a single system prompt
     ```bash
     git clone https://github.com/akmofficial/telegram-deepseek-bot.git
     cd telegram-deepseek-bot
-    # Or just copy the code
     ```
 
 2.  **Install Dependencies:**
@@ -46,25 +45,23 @@ This bot is programmed to interact with DeepSeek's API by a single system prompt
 3.  **Create Configuration File:**
     Create a file named `.env` in the same folder as the Python script. Add the following lines and replace the placeholders with your credentials:
     ```dotenv
-    # .env file
+    #
     BOT_TOKEN= <Your Telegram Bot Token>
     DEEPSEEK_API_KEY= <Your DeepSeek API Key>
 
     AUTHORIZED_ACCOUNTS= <UserID1>
-    # You can get the user ID from Telegram bots like @userinfobot.
-    # Optional: Comma-separated (,) list of Telegram User IDs allowed to use the bot.
     ```
-(Remember to remove the < and > brackets when adding your actual token and ID)
+    You can get the user ID from Telegram bots like @userinfobot.
+    Optional: Comma-separated (,) list of Telegram User IDs allowed to use the bot.
+   (Remember to remove the < and > brackets when adding your actual token and ID).
 
 4.  **Create Custom System Prompt (Optional):**
     Create a file named `prompt.txt` in the same folder. Write the text you want to use as the system prompt (e.g., "You are a programming instructor, provide your answers with explanation and examples."). If this file is not present, the default prompt "You are a helpful assistant." will be used.
 
 ## Running the Bot
 
-Execute the Python script from your terminal:
-
 ```bash
-main.py # Or whatever you named your script file
+main.py
 ```
 
 The bot is ready! You should see logging output in your terminal.
